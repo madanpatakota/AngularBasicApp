@@ -1,0 +1,80 @@
+<!-- <h1>Welcome to the Angular</h1> -->
+<!-- 
+
+<app-test-comp></app-test-comp>
+
+<app-test-comp-two></app-test-comp-two> -->
+
+
+<!--string interpolation-->
+
+<!-- <p>Hello world</p> -->
+ <!-- string interpolation -->
+ <p>{{students}}</p>
+
+ <p>{{getStudents()}}</p>
+ 
+ 
+ <!--PROPERTY DATA BINDING-->
+ 
+ <input type="text" value="Angular,Javascript,Typescript,html">
+ 
+ <br>
+ by using propertydatabindg : <input type="text" [value]="technologies">
+ 
+ <br>
+ 
+ by using propertydatabindg : <input [type]="controlType">
+ 
+ 
+ <br>
+ 
+ <button id="btnid" (click)="btnClick()">Submit</button>
+ 
+ <br>
+ 
+ <input type="text" (keyup)="textKeyUP()" >
+ 
+ <br>
+ 
+ <input id="text1" type="text"
+       (keyup)="textFindKey($event)" >
+ 
+ <!-- event | action  -->
+ 
+ <!-- keyup , keypress, keydown , mouseover , mousescroll ,
+ click -->
+ 
+ <br>
+ 
+ <input type="text"
+  [value] = "students"
+  (keyup)="textFindKey($event)"  >
+ 
+ 
+ <select>
+     <option>test1</option>
+     <option>test2</option>
+ </select>
+ 
+ <p
+ (mouseleave)="paragraphmouseleave($event)"
+ (mouseover)="paragraphmouseover($event)">
+         {{students}}</p>
+ 
+ 
+ 
+ <!-- {{}}
+ 
+ []
+ 
+ () 
+ 
+ [()] - ngModel
+ 
+ -->
+ 
+ 
+ <input type="text" [(ngModel)]="students" >
+ 
+ <p>{{students}}</p>

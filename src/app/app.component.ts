@@ -8,26 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-
-
-students = "Likitha and Sumitra";
-
-
-getStudents(){
-   return "Likitha and Sumitra";
-}
-
-
-technologies = "Angular,Javascript,Typescript,html";
-
-
-
-controlType = "radio";
-
-
-    
-
-
-
   
 }
