@@ -7,6 +7,7 @@ import { TestCompTwoComponent } from './test-comp-two/test-comp-two.component';
 import { FormsModule } from '@angular/forms';
 import { CompOneComponent } from './comp-one/comp-one.component';
 import { CompTwoComponent } from './comp-two/comp-two.component';
+import { CompThreeComponent } from './comp-three/comp-three.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CompTwoComponent } from './comp-two/comp-two.component';
     TestComponent,
     TestCompTwoComponent,
     CompOneComponent,
-    CompTwoComponent
+    CompTwoComponent,
+    CompThreeComponent
   ],
   imports: [
     BrowserModule,

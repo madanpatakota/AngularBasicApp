@@ -1,0 +1,55 @@
+<!--ngif else , localref , ngfor --ngtemplate , ngswitch 
+
+ngstyle , ngclass , ngSwitch attribute directives
+
+ngFor ngIf ngSwitchCase  structural directive
+
+-->
+
+<div *ngIf="isAdmin">
+  <p>Secret Key : 1!!*89p</p>
+</div>
+
+<hr />
+
+<p #secreat>Secret Key : 1!!*89p</p>
+<button (click)="btnSubmit(secreat)">Submit</button>
+
+<hr />
+
+<div *ngIf="isValid; else notfound">
+  <p>Student Names : Likitha and sumitra</p>
+</div>
+
+<ng-template #notfound>
+  <p>Data not found..</p>
+</ng-template>
+
+<hr />
+
+<ul>
+  <li>Liktha</li>
+  <li>Sumitra</li>
+  <li>Madhu</li>
+</ul>
+
+<ul>
+  <li *ngFor="let studentname of studentNames">{{ studentname }}</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li *ngFor="let studentdetail of studentsDetails">
+    {{ studentdetail.ID }} ________ {{ studentdetail.Name }}
+  </li>
+</ul>
+
+<hr />
+
+<ul [ngSwitch]="studentID">
+  <li *ngSwitchCase="1">Liktha</li>
+  <li *ngSwitchCase="2">Sumitra</li>
+  <li *ngSwitchCase="3">Madhu</li>
+  <li *ngSwitchDefault="">Data is not found..</li>
+</ul>
